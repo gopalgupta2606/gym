@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  
+
+  <!-- ------------ Font awesome CDN link ------------------ -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+ 
+</head>
+<style>
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .image-area {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  
+  }
+  
+  .row {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .img-wrapper {
+    width: 240px;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .img-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 180%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .3);
+    z-index: 1;
+    transform: skew(45deg);
+    transition: .5s;
+  }
+  
+  .img-wrapper:hover:before {
+    left: -180%;
+  }
+  
+  .img-wrapper img {
+    height: 400px;
+    width: 300px;
+    filter: grayscale(10%);
+    transition: 2s;
+  }
+  
+  .img-wrapper:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  
+  .img-wrapper h2 {
+    background: tomato;
+    font-family: Poppins;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 1s;
+  }
+  
+  .img-wrapper:hover h2 {
+    transform: perspective(400px) rotateY(0deg);
+  }
+  
+  .img-wrapper ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .img-wrapper ul li {
+    background: #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: perspective(800px) rotateY(90deg);
+    transition: .5s;
+    transform-origin: left;
+  }
+  
+  .img-wrapper:hover ul li {
+    transform: perspective(800px) rotateY(0deg);
+  }
+  
+  .img-wrapper:hover ul li:nth-child(1) {
+    transition-delay: .2s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(2) {
+    transition-delay: .6s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(3) {
+    transition-delay: .8s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(4) {
+    transition-delay: 1s;
+  }
+  
+  .img-wrapper ul li a {
+    color: tomato;
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .img-wrapper ul li i {
+    color: tomato;
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .img-wrapper ul li i:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (min-width: 481px) and (max-width: 768px){
+    .image-area {
+      margin-top: 20px;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-left: 10px;
+    }
+  
+    .row {
+      float: left;
+      margin-right: 10px;
+  
+    }
+  
+    .img-wrapper {
+      width: 250px;
+      height: 340px;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .img-wrapper:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 180%;
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, .3);
+      z-index: 1;
+      transform: skew(45deg);
+      transition: .5s;
+    }
+  
+    .img-wrapper:hover:before {
+      left: -180%;
+    }
+  
+    .img-wrapper img {
+      height: 400px;
+      width: 300px;
+      filter: grayscale(10%);
+      transition: 2s;
+    }
+  
+    .img-wrapper:hover img {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+  
+    .img-wrapper h2 {
+      background: tomato;
+      font-family: Poppins;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: perspective(400px) rotateY(90deg);
+      transform-origin: right;
+      transition: 1s;
+    }
+  
+    .img-wrapper:hover h2 {
+      transform: perspective(400px) rotateY(0deg);
+    }…
+</style>
+
+<body>
+  <div class="about-section">
+    <h1 style="text-align: center; color:white;"><u>About Us</u></h1>
+    <p>We are the students and making this website for all fitness guys.</p>
+    <p>This "Made EASY" website help people to learn easily,as it have all things in one platform.</p>
+  </div>
+  <div class="row">
+    <div class="image-area">
+      <div class="img-wrapper">
+        <img src="../img/kshitiz_pic.jpg" alt="kshitiz Gupta">
+        <h2>Kshitiz Gupta</h2>
+        <ul>
+          <li><a href="https://github.com/kshitiz045" target="blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/kshitiz045" target="blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/kshitiz045" target="blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="image-area">
+      <div class="img-wrapper">
+        <img src="../img/gopal_pic.jpg" alt="Gopal Gupta">
+        <h2>Gopal Gupta</h2>
+        <ul>
+          <li><a href="https://github.com/gopalgupta2606" target="blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/gopal__gupta2606" target="blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="image-area">
+      <div class="img-wrapper">
+        <img src="../img/bill.jpeg" alt="Hemant Gaur">
+        <h2>Hemant Gaur</h2>
+        <ul>
+          <li><a href="https://github.com/" target="blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="image-area">
+      <div class="img-wrapper">
+        <img src="../img/selena.jpg" alt="Rishikha Singh">
+        <h2>Rishikha Singh</h2>
+        <ul>
+          <li><a href="https://github.com/" target="blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+
+</body>
+
+</html>
