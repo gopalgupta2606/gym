@@ -1,228 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Training Plan</title>
+</head>
+<style>
+  .i1{
+    margin-left: 320px;
+    display: inline;
+  }
+  @media(max-width: 1030px){
+    .i1{
+      display: inline;
+      margin-left: 120px;
+    }
+  
+  }
+  @media(max-width: 850px){
+    .i1{
+      display: inline;
+      margin-left: 60px;
+    }
+   
+    }
+    @media(max-width: 770px){
+    .i1{
+      display: inline;
+      margin-left: 50px;
+    }
+   
+    }
+    @media(max-width: 752px){
+    .i1{
+      display: inline;
+      margin-left: 30px;
+    }
+   
+    }
+    @media(max-width: 734px){
+    .i1{
+      display: inline;
+      margin-left: 20px;
+    }
+   
+    }
+    @media(max-width: 725px){
+    .i1{
+      display: inline;
+      margin-left: 10px;
+    }
+   
+    }
+    @media(max-width: 710px){
+    .i1{
+      display: block;
+      margin-left: 140px;
+    }
+    .i2{
+      margin-left: 140px;
+    }
+   
+    }
+    @media(max-width: 528px){
+    .i1{
+      display: block;
+      margin-left: 100px;
+    }
+    .i2{
+      margin-left: 100px;
+    }
+   
+    }
+    @media(max-width: 466px){
+    .i1{
+      display: block;
+      margin-left: 50px;
+    }
+    .i2{
+      margin-left: 50px;
+    }
+   
+    }
+</style>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Training Plan</title>
-  </head>
-  <style>
-      h1{
-          margin-top: 120px;
-      }
-      .sec2{
-          display: inline;
-          margin-left: 320px;
-          margin-top: 30px;
-          
-      }
-      .text1{
-            color: red;
-            }
-            .sec3{
-                margin-top: 0px;
-                display: inline-block;
-                
-            }
-            h5{
-                color: darkslategray;
-            }
-          
-            footer{
-              background-color: black;
-              height: 50px;
-              margin-top: 10px;
-              
-            }
-.footer_content{
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-}
-
-            @media(max-width: 1120px){
-              h1{
-          margin-top: 120px;
-      }
-      .sec2{
-          display: inline;
-          margin-left: 320px;
-          margin-top: 50px;
-          
-      }
-      .text1{
-            color: red;
-            }
-            .sec3{
-                margin-top: 50px;
-                display: block;
-                
-               text-align: center;
-                
-            }
-            h5{
-                color: darkslategray;
-            }
-            
-           
-            footer{
-              margin-top: 50px;
-              width: 100%;
-              background-color: black;
-              height: 70px;
-              
-            }
-            .footer_content{
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 50px;
-}
-            .text{
-margin-left: 450px;
-            }
-            }
-
-
-
-
-
-            @media(max-width: 900px){
-              h1{
-          margin-top: 60px;
-          text-align: center;
-          font-size: 60px;
-          margin-left: 40px;
-      }
-      .sec2{
-          display: block;
-          margin-left: 320px;
-          margin-top: 50px;
-          
-      }
-      .text1{
-            color: red;
-            }
-            .sec3{
-                margin-top: 50px;
-                display: block;
-               
-               text-align: center;
-               margin-left: 110px;
-               padding: 10px;
-               
-                
-            }
-            h5{
-                color: darkslategray;
-            }
-            
-           
-            footer{
-              margin-top: 50px;
-              width: 1024px;
-              background-color: black;
-              height: 90px;
-            }
-            .footer_content{
-  color: white;
-  text-align: center;
-  font-size: 50px;
-}
-            .text{
-margin-left: 270px;
-            }
-            }
-
-
-
-
-
-            @media(max-width: 650px){
-              h1{
-          margin-top: 60px;
-         
-          font-size: 50px;
-          width: 950px;
-        
-      }
-      .sec2{
-          display: block;
-          margin-left: 320px;
-          margin-top: 50px;
-          
-      }
-      .text1{
-            color: red;
-            }
-            .sec3{
-                margin-top: 50px;
-                display: block;
-               
-               text-align: center;
-               margin-left: 10px;
-               padding: 10px;
-               width: 950px;
-               
-                
-            }
-            h5{
-                color: darkslategray;
-            }
-            
-           
-            footer{
-              margin-top: 50px;
-              width: 1024px;
-              background-color: black;
-              height: 90px;
-            }
-            .footer_content{
-  color: white;
-  text-align: center;
-  font-size: 50px;
-}
-            .text{
-margin-left: 430px;
-            }
-            }
-
-            
-  </style>
-  <body>
-      <div class="sec1">
-        <img src="./img/Screenshot (117).png" alt="">
-      </div>
-      <h1 class="text-center heading1" >Choose Your Program<span class="badge badge-secondary">New</span></h1>
-      <div class="sec2">
-      <a href="0to100.html"><img src="./img/Screenshot (118).png" > </a></div>
-<div class="sec3">
-      <h6> <span class="text1"> Program  </span> </h6>
-      <h4>FROM 0 to 100</h4>
-      <h5>Focus: lose fat, build shredded muscle, get abs.</h5>
-      <h4 style="background-color: darkslategray; width: 110px; overflow: hidden; " class="text">28 days </h4>
-    
-    </div>
-
-    
-
-    <div class="sec2">
-      <a href="5 weeks.html"><img src="./img/Screenshot (129).png"></a>
-    </div>
-    <div class="sec3">
-      <h6> <span class="text1"> Program  </span> </h6>
-      <h4>5 Weeks Aesthestic Body</h4>
-      <h5>Focus: lose fat, build shredded muscle, aesthetic physique, get abs.</h5>
-      <h4 style="background-color: darkslategray; width: 110px; overflow: hidden; " class="text">30 days </h4>
-    
-    </div>
-<footer >
-<h5 class="footer_content" >Made By :- GLA UNIVERSITY. </h5>
-</footer>
-
-     </body>
+<body>
+  <img src="./img/Screenshot (117).png" class="img-fluid" alt="Responsive image">
+  <h1 class="display-3 mt-4 text-center">Choose Your  <span style="color: red;">  Program </span> </h1>
+ <a href="0to100.html"> <img src="./img/Screenshot (118).png" class="img-fluid i1"  alt="Responsive image"></a>
+  <img src="./img/Screenshot (144).png" class="img-fluid i2" alt="Responsive image">
+  <a href="5 weeks.html"> <img src="./img/Screenshot (129).png" class="img-fluid i1" alt="Responsive image"> </a>
+  <img src="./img/Screenshot (145).png" class="img-fluid i2" alt="Responsive image">
+</body>
 </html>
